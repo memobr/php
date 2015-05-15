@@ -339,7 +339,7 @@ class PagSeguroTransactionSearchService
      * @return bool|PagSeguroTransaction
      * @throws PagSeguroServiceException
      */
-    private function searchByCodeResult($connection, $code)
+    private static function searchByCodeResult($connection, $code)
     {
         $httpStatus = new PagSeguroHttpStatus($connection->getStatus());
 
